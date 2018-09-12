@@ -41,7 +41,7 @@ public class conLogin{
     }
     
     @GetMapping("/api/login/{signemailadmin}/{signpasswordadmin}")
-     public List getDataLoginVerivikasi(@PathVariable String signemailadmin,@PathVariable String signpasswordadmin) throws Exception{
+     public List getDataLoginVerivikasi(@PathVariable String signemailadmin,@PathVariable String signpasswordadmin) {
         mst_tbl_user p = new mst_tbl_user();
         p.setSignemailadmin(signemailadmin);
         p.setSignpasswordadmin(""+new Enkripsi("APR").encrypt(signpasswordadmin));
