@@ -19,7 +19,7 @@ import org.apache.ibatis.annotations.Select;
 //@Mapper
 public interface conLoginImpl { 
 
-      @Select("SELECT * FROM m_tbl_user where signemailadmin = #{c.signemailadmin} and signpasswordadmin = #{c.signpasswordadmin}")   
+      @Select("SELECT signemailadmin FROM m_tbl_user where signemailadmin = #{c.signemailadmin} and signpasswordadmin = #{c.signpasswordadmin}")   
       public List<mst_tbl_user>  getDataLoginVerivikasi(@Param("c") mst_tbl_user c);
      
 }
