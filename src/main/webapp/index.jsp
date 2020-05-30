@@ -12,6 +12,9 @@
          <title>E-Pay</title>
 <!--        <META HTTP-EQUIV="Refresh" CONTENT="0;URL=pages/openLogin.html">-->
       </head>
+    <body>
+        <h2>Hello Word By Evan Arifial Hidayat</h2>
+    </body>
  
  </html>
  
